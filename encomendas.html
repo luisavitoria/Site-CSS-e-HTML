@@ -12,24 +12,21 @@
 </head>
 
 <body>
-    <!-- <h1 align="center">arte dos anjos</h1> -->
+   <header>
+        <img src="imgs/banner.png" alt="Logo Arte dos Anjos">
+   </header>
   
-    <img src="imgs/banner.png" alt="Logo Arte dos Anjos">
-  
-    <a href="index.html">Home</a>
-    <a href="index.html#pag-fantasias">Fantasias</a>
-    <a href="index.html#pag-criancas">Crianças</a>
-    <a href="index.html#pag-aromatizantes">Aromatizantes</a>
-    <a href="index.html#pag-contatos">Contatos</a>
-    <a href="#">Encomendas</a>
-      
-   
-    <p>Encomendas e pronta entrega de fantasias e roupas para crianças, aventais e aromatizadores de ambiente!</p>
-    <p>Feito por Rosângela dos Anjos &#x2764; </p>
-    <hr id="pag-fantasias"/>
-
+    <nav>
+        <a class="a-menu" href="index.html">Home</a>
+        <a class="a-menu" href="index.html#pag-fantasias">Fantasias</a>
+        <a class="a-menu" href="index.html#pag-criancas">Crianças</a>
+        <a class="a-menu" href="index.html#pag-aromatizantes">Aromatizantes</a>
+        <a class="a-menu" href="index.html#pag-contatos">Contatos</a>
+        <a class="a-menu" href="#">Encomendas</a>
+    </nav>
+    
+    <section id='pag-encomendas'>
     <h1>Encomendas</h1>
-   
     <form name="" method="" action="">
         <label for="nome">Nome:</label>
         <input id="nome" type="text" name="nome_completo" placeholder="Digite seu nome completo" required autofocus> <!-- size indica o numero de caracteres / placeholder é um indicativo do que é pra digitar -->
@@ -43,14 +40,20 @@
         <label for="celular">Celular:</label>
         <input id="celular" type="tel" name="celular" placeholder="(99) 99999-9999" pattern=“^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$”>
 
-        <label for="data">Data:</label>
-        <input id="date" type="date" name="data">
-
-        <label for="hora">Hora:</label>
-        <input id="hora" type="time" name="hora">
-
-        <label for="aulas">Quantidade:</label>
-        <input id="aulas" type="number" min="1" max="10" step="1">
+        <div id='data-hora-quant'>
+            <div class='dth'>
+                <label for="data">Data:</label>
+                <input id="date" type="date" name="data">
+            </div>
+            <div class='dth'> 
+                <label for="hora">Hora:</label>
+                <input id="hora" type="time" name="hora">
+            </div>
+            <div class='dth'> 
+                <label for="aulas">Quantidade:</label>
+                <input id="aulas" type="number" min="1" max="10" step="1">
+            </div>
+        </div>
 
         <label for="tipo">Tipo:</label>
         <select name="tipo" id="tipo">
@@ -72,21 +75,25 @@
         
         <fieldset>
             <legend>Opções:</legend>
-            <input id="vestido" type="checkbox" name="opcoes" value="vestido"> <label for="vestido">Vestido</label>
-            <input id="saia" type="checkbox" name="opcoes" value="saia"> <label for="saia">Saia</label>
-            <input id="macaq" type="checkbox" name="opcoes" value="macaquinho"> <label for="macaq">Macaquinho</label>
+            <input id="vestido" type="checkbox" name="opcoes" value="vestido"> <label for="vestido">Vestido</label><br>
+            <input id="saia" type="checkbox" name="opcoes" value="saia"> <label for="saia">Saia</label><br>
+            <input id="macaq" type="checkbox" name="opcoes" value="macaquinho"> <label for="macaq">Macaquinho</label><br>
             <input id="aromat" type="checkbox" name="opcoes" value="aromatizante"> <label for="aromat">Aromatizante</label>
         </fieldset>
 
         <label for="msg">Mensagem:</label><br>
-        <textarea name="" id="msg" cols="50" rows="10"></textarea>
+        <textarea name="" id="msg" cols="52" rows="10"></textarea>
 
-        <p><input type="submit" name="bnt-encomendar" value="ENVIAR">
-            <input type="reset" name="bnt-cancelar"  value="CANCELAR"></p>  
+        <div id='botao-form'>
+            <input type="submit" name="bnt-encomendar" value="ENVIAR">
+            <input type="reset" name="bnt-cancelar"  value="CANCELAR">
+        </div>
     </form>
-    
-    <p align="center">Desenvolvido por <a href="https://www.instagram.com/luisavitoria" target="_blank">Luísa Vitória</a> - 2022</p>
-    
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://www.instagram.com/luisavitoria" target="_blank">Luísa Vitória</a> - 2022</p>
+    </footer>
 
 </body>
 </html>

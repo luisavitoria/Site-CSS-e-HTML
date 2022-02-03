@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas:    "header header header"
+                            "nav main aside"
+                            "footer footer footer"
+}
+
+header {
+    background-color: #757575;
+    grid-area: header;
+}
+
+nav {
+    background-color: rgb(73, 71, 71);
+    grid-area: nav;
+}
+
+main {
+    background-color: hotpink;
+    grid-area: main;
+}
+
+aside {
+    background-color: rgb(182, 115, 115);
+    grid-area: aside;
+}
+
+footer {
+    background-color: rgb(12, 3, 3);
+    grid-area: footer;
+}

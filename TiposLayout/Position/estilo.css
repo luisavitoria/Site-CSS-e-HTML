@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{}
+
+section{}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #757575;
+}
+
+#nav-horizontal {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(109, 121, 87);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    width: 30%;
+    height: 850px;
+    background-color: rgb(73, 71, 71);
+    float: left;
+}
+
+main {
+    width: 55%;
+    height: 850px;
+    float: left;
+}
+
+#box-main {
+    width: 90%;
+    height: 200px;
+    background-color: rgb(189, 189, 140);
+    position: relative;
+    /*position: absolute se move em relação ao body, topo da tela*/
+    top: 30px;
+    left: 30px;
+}
+
+aside {
+    width: 15%;
+    height: 850px;
+    background-color: rgb(100, 182, 100);
+    float: left;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(12, 3, 3);
+    clear:both;
+}
+
+#bt-topo {
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    border-radius: 35px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
